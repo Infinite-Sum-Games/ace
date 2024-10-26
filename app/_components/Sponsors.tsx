@@ -2,8 +2,6 @@
 
 import React from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { LampContainer } from "@/_components/ui/lamp";
 import OrbitingCircles from "@/_components/ui/orbiting-circles";
 import google from "../../public/sponsers/google.svg";
 import bitcoin from "../../public/sponsers/bitcoin.svg";
@@ -16,9 +14,9 @@ import tesla from "../../public/sponsers/tesla.svg";
 
 const Sponsors = () => {
   return (
-    <div className="relative flex h-[900px] w-full flex-col items-center justify-center overflow-hidden bg-background md:shadow-xl">
+    <div className="relative flex h-[900px] w-full flex-col items-center justify-center overflow-hidden bg-background">
       <span className="z-10 shadow-md pointer-events-none whitespace-pre-wrap text-orange-500 bg-clip-text text-center text-5xl font-semibold leading-none font-">
-        Our Sponsors
+        Sponsors
       </span>
 
       {/* Inner Circles */}
