@@ -50,7 +50,7 @@ const FAQ = () => {
         ease: "easeInOut",
       }}>
         <div className="flex justify-center items-center mb-6 ">
-          <span className="font-extrabold bg-gradient-to-b from-orange-500 via-orange-600 to-black bg-clip-text text-transparent">
+          <span className="font-extrabold bg-gradient-to-b from-orange-400 via-orange-400 to-orange-900/10 bg-clip-text text-transparent">
           Frequently
           </span>
           <span className="text-white ">
