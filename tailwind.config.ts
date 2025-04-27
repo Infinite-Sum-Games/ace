@@ -22,7 +22,9 @@ const config: Config = {
   darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}", // Scan files in the pages directory
-    "./components/**/*.{ts,tsx}", // Scan files in the components directory
+    "./_components/**/*.{ts,tsx}", // Scan files in the components directory
+    "./app/_component/**/*.{ts,tsx}",
+    "./app/_component/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}", // Scan files in the src directory
   ],
