@@ -39,16 +39,21 @@ const Navbar = () => {
 
         {/* Links in the center */}
         <div className="mr-20 hidden md:flex flex-grow items-center justify-center space-x-4">
-          {['Home', 'Events', 'Blogs', 'Newsletter', 'Achievements', 'Timeline'].map((item) => (
-            <Link
-              key={item}
-              href={`/${item.toLowerCase()}`}
-              className="text-lg text-gray-300 px-4 py-2 rounded-md transition-transform duration-300 hover:scale-110 font-sans"
-            >
-              {item}
-            </Link>
-          ))}
-        </div>
+  {['Home', 'Event', 'Blog', 'Timeline'].map((item) => {
+    const href = item === 'Home' ? '/' : `/${item.toLowerCase()}`; // Conditional for home
+
+    return (
+      <Link
+        key={item}
+        href={href} // Conditional href based on item
+        className="text-lg text-gray-300 px-4 py-2 rounded-md transition-transform duration-300 hover:scale-110 font-sans"
+      >
+        {item}
+      </Link>
+    );
+  })}
+</div>
+
 
         {/* Login button on the right */}
         <div className="flex items-center space-x-4">
