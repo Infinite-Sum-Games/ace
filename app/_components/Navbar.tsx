@@ -39,7 +39,7 @@ const Navbar = () => {
 
         {/* Links in the center */}
         <div className="mr-20 hidden md:flex flex-grow items-center justify-center space-x-4">
-  {['Home', 'Event', 'Blog', 'Achievements', 'Timeline'].map((item) => {
+  {['Home', 'Event', 'Blog', 'Timeline'].map((item) => {
     const href = item === 'Home' ? '/' : `/${item.toLowerCase()}`; // Conditional for home
 
     return (
